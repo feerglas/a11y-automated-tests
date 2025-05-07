@@ -18,7 +18,7 @@ These conditions can then be used to create assertions in automated test framewo
 
 *Recommendation*: Use it either with test content or on live pages.
 
-*Example*: `/tests/axe.spec.ts`
+*Example*: [/tests/axe.spec.ts](/tests/axe.spec.ts)
 
 *Links*:
 - [Accessibility testing using Playwright](https://playwright.dev/docs/accessibility-testing)
@@ -32,7 +32,7 @@ These conditions can then be used to create assertions in automated test framewo
 
 *Recommendation*: Use test content (which never changes) for run these tests. Otherwise you'll get regressions on every iteration.
 
-*Example*: `/tests/snapshot.spec.ts`
+*Example*: [/tests/snapshot.spec.ts](/tests/snapshot.spec.ts)
 
 *Links*:
 - [Snapshot testing using Playwright](https://playwright.dev/docs/aria-snapshots)
