@@ -1,5 +1,7 @@
 # Automated a11y tests
 
+Showcasing / Playground / Getting-Started for automated a11y tests using Playwright.
+
 ## Installation
 
 ### Node
