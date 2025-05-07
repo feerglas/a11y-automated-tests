@@ -1,0 +1,20 @@
+a {
+  color: blue;
+}
+
+a:hover,
+a:focus {
+  color: red;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+section {
+  margin-block: 2rem;
+  padding-block-start: 1rem;
+  border-top: 1px solid black;
+}
