@@ -4,7 +4,7 @@ We prefer Playwright for everything related to E2E testing. It is open source, m
 
 *Recommendation*:
 - Use constant test content (e.g. test content that never changes) to test your components and pages.
-- Run your dev-enironment and the tests in a Docker container.
+- Run your dev-enironment and the tests in a Docker container to get constant test results and prevent flaky tests.
 - Run the tests on every Pull Request as quality gate.
 - Run the tests in your release pipeline as quality gate.
 
