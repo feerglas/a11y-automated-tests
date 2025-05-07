@@ -1,0 +1,18 @@
+- navigation:
+  - link "Home":
+    - /url: /
+- main:
+  - heading "Accessibility Tree Snapshot Testing" [level=1]
+  - paragraph:
+    - text: See
+    - link "https://playwright.dev/docs/aria-snapshots":
+      - /url: https://playwright.dev/docs/aria-snapshots
+    - text: for more information.
+  - heading "A list" [level=2]
+  - list:
+    - listitem: List item 1
+    - listitem: List item 2
+    - listitem: List item 3
+  - heading "Form elements" [level=2]
+  - text: Some label
+  - textbox "Some label"
