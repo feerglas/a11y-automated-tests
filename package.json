@@ -7,11 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "docker:test:build": "sudo docker compose -f docker-compose.yml build",
-    "test:native": "playwright test",
-    "test:native:watch": "playwright test --ui-port=8080 --ui-host=0.0.0.0",
-    "test": "docker compose -f docker-compose.yml run --rm visual-test npm run test:native",
-    "test:watch": "docker compose -f docker-compose.yml run --rm -p 8080:8080 visual-test npm run test:native:watch"
+    "test": "playwright test",
+    "test:watch": "playwright test --ui-port=8080"
   },
   "dependencies": {
     "next": "15.3.2",

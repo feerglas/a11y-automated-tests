@@ -1,8 +1,0 @@
-# syntax=docker.io/docker/dockerfile:1.7-labs
-
-# ATTENTION: This docker file uses node 22.x. Regularly check if node version changed.
-
-FROM mcr.microsoft.com/playwright:v1.52.0-noble
-WORKDIR /src
-COPY --exclude=node_modules . .
-RUN npm install
