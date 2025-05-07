@@ -1,6 +1,6 @@
 # Explanations
 
-## AXE
+## Use axe with Playwright
 
 *Goal*: Identify and fix common accessibility issues.
 
@@ -8,17 +8,21 @@
 
 *Recommendation*: Use it either with test content or on live pages.
 
+*Example*: `/tests/axe.spec.ts`
+
 *Links*:
 - [Accessibility testing using Playwright](https://playwright.dev/docs/accessibility-testing)
 - [axe-core for Playwright](https://www.npmjs.com/package/@axe-core/playwright)
 
-## Snapshot testing
+## Use Playwright snapshot testing
 
 *Goal*: Catch regressions in the accessibility tree.
 
 *How*: A snapshot of the accessibility is taken (yaml-format) at a point in time. This serves as the baseline. In subsequent test runs, the current snapshot is compared to the baseline to spot any differences.
 
 *Recommendation*: Use test content (which never changes) for run these tests. Otherwise you'll get regressions on every iteration.
+
+*Example*: `/tests/snapshot.spec.ts`
 
 *Links*:
 - [Snapshot testing using Playwright](https://playwright.dev/docs/aria-snapshots)
