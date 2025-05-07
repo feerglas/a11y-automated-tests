@@ -22,4 +22,4 @@ To run the tests in Watch mode, use `npm run test:watch`.
 
 ## Further explanations
 
-See (EXPLANATIONS.md)[/EXPLANATIONS.md]
+See [EXPLANATIONS.md](/EXPLANATIONS.md)
