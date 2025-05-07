@@ -10,10 +10,6 @@ Use the node version mentioned in `.nvmrc`
 
 Run `npm install` to install all dependencies.
 
-### Build docker image
-
-Tests run in a docker container. Make sure you build the docker image before running tests by running `npm run docker:test:build`.
-
 ## Tests
 
 ### CLI Test
