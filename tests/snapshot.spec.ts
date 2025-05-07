@@ -5,6 +5,5 @@ test('Should not have any accessibility regressions', async ({ page }) => {
 
   const mainComponent = await page.getByTestId('main');
   await expect(mainComponent).toMatchAriaSnapshot({ name: 'snapshot.aria.yml' });
-
 });
 
