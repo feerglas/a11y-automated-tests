@@ -12,7 +12,9 @@ We prefer Playwright for everything related to E2E testing. It is open source, m
 
 *Goal*: Identify and fix common accessibility issues.
 
-*How*: A lot of rulesets in WCAG can be re-written as programmatic conditions. For example: `UL-elements may only contain LI-elements as direct children.`. These conditions can then be used to create assertions in automated test frameworks like Playwright.
+*How*: A lot of rulesets in WCAG can be re-written as programmatic conditions. For example: `UL-elements may only contain LI-elements as direct children.`. It is pretty easy to traverse the DOM tree with JavaScript and check if this condition is met or not.
+
+These conditions can then be used to create assertions in automated test frameworks like Playwright.
 
 *Recommendation*: Use it either with test content or on live pages.
 
