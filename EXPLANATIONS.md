@@ -1,5 +1,8 @@
 # Explanations
 
+**KEEP IN MIND**
+There is no way around manual testing. Just because all of your automated accessibility tests pass does not mean that your components and/or pages are accessible. They usually catch only the most common pitfalls.
+
 We prefer Playwright for everything related to E2E testing. It is open source, maintained by Microsoft.
 
 *Recommendation*:
