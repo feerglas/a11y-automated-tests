@@ -6,20 +6,26 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:test:build": "sudo docker compose -f docker-compose.yml build",
+    "test:native": "playwright test",
+    "test:native:watch": "playwright test --ui-port=8080 --ui-host=0.0.0.0",
+    "test": "docker compose -f docker-compose.yml run --rm visual-test npm run test:native",
+    "test:watch": "docker compose -f docker-compose.yml run --rm -p 8080:8080 visual-test npm run test:native:watch"
   },
   "dependencies": {
+    "next": "15.3.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@playwright/test": "^1.52.0",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
-    "@eslint/eslintrc": "^3"
+    "typescript": "^5"
   }
 }
