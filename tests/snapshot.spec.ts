@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('has title', async ({ page }) => {
+test('Should not have any accessibility regressions', async ({ page }) => {
   await page.goto('http://localhost:3000/snapshot');
 
   const mainComponent = await page.getByTestId('main');
